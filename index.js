@@ -78,7 +78,7 @@ app.use(express.static(__dirname + "/public"))
 
 // Task 2: Set up the route handler for / to send back the index.html file
 app.get("/", (req, res) => {
-  res.render("index.html", data)
+  res.sendFile("__dirname" + "/public/index.html")
 })
 
 
